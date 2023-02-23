@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        eval(), String(), parseFloat(), parseInt(), Number(), isFinite(), isNaN(), encodeURIComponent(), decodeURIComponent()
+       
+        var encodeStr = '자바스트립트';
+        document.write(encodeURIComponent(encodeStr));
+        var decodeStr = encodeURIComponent(encodeStr);
+        document.write(decodeURIComponent(decodeStr));
+
+        var num1 = '숫자';
+        if (!isNaN(num1)) {
+            document.write('숫자');
+        } else {
+            document.write('숫자아님');
+        }
+        var num2 = 1 / 0;
+        if (isFinite(num2)) {
+            document.write('유한값');
+        } else {
+            document.write('무한값');
+        }
+        var num3 = '10';
+        document.write(Number(num3));
+        var num4 = '100px';
+        document.write(parseInt(num4));
+        var num5 = '33.3%';
+        document.write(parseFloat(num5));
+        var num6 = 10;
+        document.write(typeof num6);
+        document.write(typeof String(num6));
+
+        var str1 = 'var num7' = '10';
+        var str2 = 'var num8' = '20';
+        eval(str1);
+        eval(str2);
+        document.write(num7 + num8);
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
